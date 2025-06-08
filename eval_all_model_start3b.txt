@@ -1,0 +1,2 @@
+python3 /home/xukaiyuan/Project/backdoor_code/code-eval/eval_starcoder2_finetunning_muti.py --trigger 1 --gpu_id 3 --save_path star15b_TP_0.5 --load_path finetune_starcoder2-15b_backdoor_TP_0.5/checkpoint-1500/ --base_model /home/xukaiyuan/Project/backdoor_code/starcoder2-15b
+python3 /home/xukaiyuan/Project/backdoor_code/code-eval/eval_starcoder2_finetunning_muti.py --trigger 1 --gpu_id 2 --save_path star15b_TP_1 --load_path finetune_starcoder2-15b_backdoor_TP_1/checkpoint-1500/ --base_model /home/xukaiyuan/Project/backdoor_code/starcoder2-15b
